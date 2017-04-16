@@ -1,0 +1,27 @@
+#N canvas -1111 57 407 517 10;
+#X msg 22 163 3 6 4 9 12;
+#X obj 22 185 unpack f f f f f;
+#X text 21 87 (3 + 6 x 4 + 9) / 12;
+#X text 22 37 Revisa el archivo de ayuda de unpack y trata de implementar
+la siguiente fórmula matemática.;
+#X text 21 118 la respuesta es 3 y debes poder abrir el patch y obtener
+el resultado a la primera. revisa el orden de operaciones.;
+#X text 17 223 ==============================================;
+#X msg 108 266 3 6 4 9 12;
+#X obj 108 288 unpack f f f f f;
+#X obj 131 321 *;
+#X obj 108 354 +;
+#X obj 130 384 +;
+#X obj 149 414 /;
+#X obj 149 447 print;
+#X connect 0 0 1 0;
+#X connect 6 0 7 0;
+#X connect 7 0 9 0;
+#X connect 7 1 8 0;
+#X connect 7 2 8 1;
+#X connect 7 3 10 1;
+#X connect 7 4 11 1;
+#X connect 8 0 9 1;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
